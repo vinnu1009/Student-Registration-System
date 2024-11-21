@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      background-color: rgb(181, 247, 181);
+    }
+
+    .container{
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    button{
+      margin-left: 180px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="heading">
+    <center><h1>Welcome To Student Login Page</h1></center>
+  </div>
+
+  <div class="container">
+
+
+    <form method="POST" action="">
+
+      <div>
+        <label for="user">Username:</label>
+        <input name="username" type="text" id="user">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="pass">Password:  </label>
+        <input type="password" name="password" id="pass">
+      </div>
+
+      <br>
+
+      <button type="submit">submit</button>
+
+      <br>
+
+    </form>
+
+    <p>Don't have an Account? <a href="{{url_for('registration')}}">Register Here</a></p>
+
+  </div>
+
+</body>
+
+</html>
